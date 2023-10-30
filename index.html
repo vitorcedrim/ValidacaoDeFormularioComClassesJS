@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Validação de Formulário com Classes JS</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,19 +15,24 @@
             <li>Usuário deverá ter entre 3 e 12 caracteres</li>
             <li>Senha precisa ter entre 6 e 12 caracteres</li>
         </ul>
-        <label for="nome">Nome:</label>
-        <input type="text" name="nome" id="nome">
-        <label for="sobrenome">Sobrenome:</label>
-        <input type="text" name="sobrenome" id="sobrenome">
-        <label for="cpf">CPF:</label>
-        <input type="text" name="cpf" id="cpf">
-        <label for="usuario">Usuário:</label>
-        <input type="text" name="usuario" id="usuario">
-        <label for="senha">Senha:</label>
-        <input type="text" name="senha" id="senha">
-        <label for="repetesenha">Repete senha:</label>
-        <input type="text" name="repetesenha" id="repetesenha">
+        <form action="/" method="post" class="formulario">
+            <label for="nome">Nome:</label>
+            <input class="validar" type="text" name="nome" id="nome">
+            <label for="sobrenome">Sobrenome:</label>
+            <input class="validar" type="text" name="sobrenome" id="sobrenome">
+            <label for="cpf">CPF:</label>
+            <input class="validar cpf" type="number" name="cpf" id="cpf">
+            <label for="usuario">Usuário:</label>
+            <input class="validar usuario" type="text" name="usuario" id="usuario">
+            <label for="senha">Senha:</label>
+            <input class="validar senha" type="password" name="senha" id="senha">
+            <label for="repetesenha">Repete senha:</label>
+            <input class="validar repetirSenha" type="password" name="repetesenha" id="repetesenha">
+            <button type="submit">Enviar formulário</button>
+        </form>
+        
     </div>
+    <script src="validaCPF.js"></script>
+    <script src="main.js"></script>
 </body>
-<script src="main.js"></script>
 </html>

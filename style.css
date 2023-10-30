@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:ital,wght@0,400;0,600;0,700;1,500&display=swap');
+
 body, html {
     margin: 0;
     padding: 0;
@@ -11,16 +13,66 @@ body, html {
 .main {
     width: 80%;
     max-width: 600px;
-    height: 100%;
     background-color: white;
     padding: 3rem;
     border-radius: 0.5rem;
-    -webkit-border-radius: 0.5rem;
-    -moz-border-radius: 0.5rem;
-    -ms-border-radius: 0.5rem;
-    -o-border-radius: 0.5rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: left;
+    border: solid;
+    border-radius: 1rem;
+    border-width: 2px;
+    border-color: rgb(218, 218, 218);
+}
+
+h1 {
+    font-family: "Montserrat", sans-serif;
+}
+
+li {
+    font-family: "Montserrat", sans-serif;
+}
+
+ul {
+ margin-bottom: 2rem;
+}
+
+label {
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+}
+
+input {
+    border: none;
+    height: 3rem;
+    border-radius: 6px;
+    backdrop-filter: blur(5px);
+    background-color: rgb(228, 228, 228);
+}
+
+button {
+    border: none;
+    height: 3rem;
+    border-radius: 6px;
+    backdrop-filter: blur(5px);
+    background-color: rgb(91, 121, 177);
+    color: white;
+    margin-top: 3rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.error-text {
+    font-size: 1rempx;
+    color: red;
 }
